@@ -1,0 +1,117 @@
+/* Общий стиль */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    color: #2f3640;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #273c75;
+}
+
+/* Контейнеры */
+#auth,
+#notes {
+    background: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #192a56;
+}
+
+/* Формы */
+form {
+    margin: 15px 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    font-size: 14px;
+    transition: 0.2s;
+    background: #fdfdfd;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #273c75;
+    outline: none;
+    box-shadow: 0 0 4px rgba(39, 60, 117, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Кнопки */
+button {
+    background: #273c75;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #40739e;
+}
+
+#logoutBtn {
+    background: #c23616;
+    float: right;
+}
+
+#logoutBtn:hover {
+    background: #e84118;
+}
+
+/* Список заметок */
+#notesList {
+    list-style: none;
+    padding: 0;
+}
+
+#notesList li {
+    background: #f1f2f6;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#notesList b {
+    color: #2f3640;
+}
+
+#notesList button {
+    margin-left: 8px;
+    background: #718093;
+}
+
+#notesList button:hover {
+    background: #353b48;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Заметки</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>📒 Заметки</h1>
+
+        <div id="auth">
+            <h2>Авторизация</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Логин"
+                    required>
+                <input type="password" id="loginPassword" placeholder="Пароль"
+                    required>
+                <button type="submit">Войти</button>
+            </form>
+
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <input type="text" id="registerUsername" placeholder="Логин"
+                    required>
+                <input type="email" id="registerEmail"
+                    placeholder="Электронная почта" required>
+                <input type="password" id="registerPassword1"
+                    placeholder="Введите пароль" required>
+                <input type="password" id="registerPassword2"
+                    placeholder="Подтвердите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+
+        <div id="notes" style="display:none;">
+            <button id="logoutBtn">Выйти</button>
+
+            <h2 id="formTitle">Создать заметку</h2>
+            <form id="noteForm">
+                <input type="text" id="noteTitle" placeholder="Заголовок"
+                    required>
+                <textarea id="noteText" placeholder="Текст" required></textarea>
+                <button type="submit">Сохранить</button>
+            </form>
+
+            <h2>Мои заметки</h2>
+            <ul id="notesList"></ul>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
